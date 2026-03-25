@@ -1,0 +1,168 @@
+/* =========================
+   GLOBAL RESET & BASE
+========================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  background-color: #f8f9fb;
+  color: #1f2937;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Remove default centering from Vite */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 600;
+  color: #111827;
+}
+
+p {
+  margin: 0;
+  color: #374151;
+}
+
+a {
+  color: #c0caf6;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #88898d;
+  
+}
+
+/* =========================
+   BUTTON RESET (MUI SAFE)
+========================= */
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* =========================
+   SCROLLBAR (MODERN)
+========================= */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #5a67d8, #6b46c1);
+}
+
+/* =========================
+   CODE BLOCKS
+========================= */
+
+code {
+  font-family: "Fira Code", monospace;
+  font-size: 0.9rem;
+}
+
+/* =========================
+   TABLES (SAFE FALLBACK)
+========================= */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* =========================
+   UTILITY CLASSES
+========================= */
+
+.text-muted {
+  color: #6b7280;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+/* =========================
+   DARK MODE SUPPORT
+========================= */
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #0f172a;
+    color: #e5e7eb;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #ffffff;
+  }
+
+  p {
+    color: #595593;
+  }
+
+  a {
+    color: #394585;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #020617;
+  }
+}
